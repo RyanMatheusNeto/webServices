@@ -26,7 +26,7 @@ AppDataSource.initialize()
 
     const posts: Post[] = [];
 
-    for(let i = 0; i< 10; ++ i){
+    for(let i = 0; i< 100000; ++ i){
         let post = Post.createPost(`Titulo ${i}`, 'Conteudo');
         post.user = user;
         post = await postController.save(post);
